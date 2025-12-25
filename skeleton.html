@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathAI - Не просто калькулятор</title>
+    <style>
+        :root {
+            --primary: #10a37f;
+            --dark: #202123;
+            --darker: #343541;
+            --text: #ececf1;
+            --subtext: #9ca3af;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--darker);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+     
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        .nav a { color: var(--text); text-decoration: none; margin-left: 20px; font-weight: 500; }
+        
+     
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; color: var(--subtext); max-width: 700px; margin: 0 auto 40px; }
+        .btn-cta {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn-cta:hover { background-color: #0d8a6a; transform: translateY(-2px); }
+
+        
+        .features { padding: 80px 0; background-color: var(--dark); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { padding: 30px; background: var(--darker); border-radius: 10px; border: 1px solid #4d4d4f; }
+        .feature-card h3 { color: var(--primary); margin-bottom: 15px; }
+
+        
+        .team { padding: 80px 0; text-align: center; }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
+        .team-member { background: var(--dark); padding: 20px; border-radius: 10px; }
+        .role { color: var(--subtext); font-size: 0.9rem; }
+
+        footer { text-align: center; padding: 40px; color: var(--subtext); border-top: 1px solid #4d4d4f; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">MathAI Calc</div>
+            <nav class="nav">
+                <a href="#features">Переваги</a>
+                <a href="#team">Команда</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Досить списувати.<br>Почни розуміти.</h1>
+            <p>Перший калькулятор з ШІ, який пояснює логіку кожного кроку. Ваш персональний цифровий викладач, доступний 24/7.</p>
+            <a href="calculator.html" class="btn-cta">Запустити Калькулятор</a>
+        </section>
+    </div>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px;">Чому ми кращі за звичайний калькулятор?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Покрокове пояснення</h3>
+                    <p>Ми не просто даємо відповідь. Ми розкладаємо рішення на атоми, щоб ти зрозумів логіку.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Адаптивність</h3>
+                    <p>Від шкільних рівнянь до університетських інтегралів. Система підлаштовується під твій рівень.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Діалог з ШІ</h3>
+                    <p>Не зрозумів крок? Просто запитай у чаті, і бот пояснить простішою мовою.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2>Команда розробки (ПЗПІ-24-2)</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Бардакова Софія</h4>
+                    <span class="role">Project Manager</span>
+                </div>
+                <div class="team-member">
+                    <h4>Хохлов Олександр</h4>
+                    <span class="role">AI Specialist</span>
+                </div>
+                <div class="team-member">
+                    <h4>Боровик Давид</h4>
+                    <span class="role">Backend Dev</span>
+                </div>
+                <div class="team-member">
+                    <h4>Калініченко Андрій</h4>
+                    <span class="role">UI/UX Designer</span>
+                </div>
+                <div class="team-member">
+                    <h4>Щербак Богдан</h4>
+                    <span class="role">Business analyst</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MathAI Project. Харківський національний університет радіоелектроніки.</p>
+    </footer>
+
+</body>
+</html>
